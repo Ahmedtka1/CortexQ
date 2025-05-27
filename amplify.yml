@@ -8,7 +8,7 @@ frontend:
         - npm install --legacy-peer-deps
     build:
       commands:
-        - npm run build
+        - npm run build -- --verbose
   artifacts:
     baseDirectory: dist
     files:
@@ -16,4 +16,3 @@ frontend:
   cache:
     paths:
       - node_modules/**/*
-
